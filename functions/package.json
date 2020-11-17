@@ -1,0 +1,31 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.6.0",
+    "firebase-functions": "^3.3.0",
+    "http-proxy": "^1.18.1",
+    "proxy-from-env": "0.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6",
+    "coveralls": "^2.11.6",
+    "eslint": "^2.2.0",
+    "istanbul": "^0.4.2",
+    "lolex": "^1.5.0",
+    "mocha": "^3.4.2",
+    "nock": "^8.2.1",
+    "supertest": "^2.0.1"
+  },
+  "private": true
+}
